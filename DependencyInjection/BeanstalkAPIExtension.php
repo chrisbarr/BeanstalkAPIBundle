@@ -17,6 +17,6 @@ class BeanstalkAPIExtension extends Extension
 
 		$configuration = new Configuration();
 		$processor = new Processor();
-		$config = $processor->process($configuration->getConfigTree(), $configs);
+		$config = $processor->processConfiguration($configuration, $configs);
 	}
 }
