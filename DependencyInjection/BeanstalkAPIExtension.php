@@ -13,7 +13,7 @@ class BeanstalkAPIExtension extends Extension
 	public function load(array $configs, ContainerBuilder $container)
 	{
 		$loader = new XmlFileLoader($container, new FileLocator(array(__DIR__.'/../Resources/config')));
-		$loader->load('config.xml');
+		$loader->load('beanstalk.xml');
 
 		$configuration = new Configuration();
 		$processor = new Processor();
