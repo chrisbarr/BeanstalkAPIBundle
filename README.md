@@ -1,5 +1,6 @@
 #BeanstalkAPIBundle
 A Symfony2 bundle for the [Beanstalkapp](http://beanstalkapp.com) API
+
 This bundle uses a slightly modified version of the [Beanstalk PHP API](https://github.com/chrisbarr/sfBeanstalk-PHP-API)
 
 ##Installation
@@ -39,7 +40,9 @@ This bundle uses a slightly modified version of the [Beanstalk PHP API](https://
 
 ##Usage
 
-All Beanstalk API methods are available through the `beanstalkapi` service - see https://github.com/chrisbarr/sfBeanstalk-PHP-API
+All Beanstalk API methods are available through the `beanstalkapi` service - see https://github.com/chrisbarr/sfBeanstalk-PHP-API for available methods
+
+All methods return `SimpleXMLElement` objects
 
 ``` php
 <?php
