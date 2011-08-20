@@ -1,6 +1,6 @@
 <?php
 
-namespace Beanstalkapp\BeanstalkAPI\DependencyInjection;
+namespace Beanstalkapp\BeanstalkAPIBundle\DependencyInjection;
 
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
