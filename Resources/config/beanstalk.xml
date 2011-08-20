@@ -5,17 +5,17 @@
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <parameters>
-        <parameter key="beanstalkapi.account">null</parameter>
-        <parameter key="beanstalkapi.username">null</parameter>
-        <parameter key="beanstalkapi.password">null</parameter>
-        <parameter key="beanstalkapi.service.class">Beanstalkapp\BeanstalkAPIBundle\Services\BeanstalkAPI</parameter>
+        <parameter key="beanstalk_api.account">null</parameter>
+        <parameter key="beanstalk_api.username">null</parameter>
+        <parameter key="beanstalk_api.password">null</parameter>
+        <parameter key="beanstalk_api.service.class">Beanstalkapp\BeanstalkAPIBundle\Services\BeanstalkAPI</parameter>
     </parameters>
 
     <services>
         <service id="beanstalkapi" class="%beanstalkapi.service.class%">
-            <argument>%beanstalkapi.account%</argument>
-            <argument>%beanstalkapi.username%</argument>
-            <argument>%beanstalkapi.password%</argument>
+            <argument>%beanstalk_api.account%</argument>
+            <argument>%beanstalk_api.username%</argument>
+            <argument>%beanstalk_api.password%</argument>
         </service>
     </services>
 
