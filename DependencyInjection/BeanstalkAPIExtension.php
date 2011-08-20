@@ -18,5 +18,11 @@ class BeanstalkAPIExtension extends Extension
 		$configuration = new Configuration();
 		$processor = new Processor();
 		$config = $processor->processConfiguration($configuration, $configs);
+		
+		foreach (array('account', 'username', 'password') as $attribute) {
+			if (isset($config[$attribute])) {
+				$container->setParameter('beanstalk_api.'.$attribute, $config[$attribute]);
+			}
+		}
 	}
 }
