@@ -1,5 +1,6 @@
 #BeanstalkAPIBundle
-A Symfony2 bundle for the Beanstalk PHP API
+A Symfony2 bundle for the [Beanstalkapp](http://beanstalkapp.com) API
+This bundle uses a slightly modified version of the [Beanstalk PHP API](https://github.com/chrisbarr/sfBeanstalk-PHP-API)
 
 ##Installation
 
@@ -38,6 +39,10 @@ A Symfony2 bundle for the Beanstalk PHP API
 
 ##Usage
 
-    <?php
-        $beanstalk = $this->get('beanstalkapi');
-        $plans = $beanstalk->find_all_plans();
+All Beanstalk API methods are available through the `beanstalkapi` service - see https://github.com/chrisbarr/sfBeanstalk-PHP-API
+
+``` php
+<?php
+    $beanstalk = $this->get('beanstalkapi');
+    $plans = $beanstalk->find_all_plans();
+```
