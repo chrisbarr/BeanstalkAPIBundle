@@ -12,7 +12,7 @@
     </parameters>
 
     <services>
-        <service id="beanstalkapi" class="%beanstalkapi.service.class%">
+        <service id="beanstalkapi" class="%beanstalk_api.service.class%">
             <argument>%beanstalk_api.account%</argument>
             <argument>%beanstalk_api.username%</argument>
             <argument>%beanstalk_api.password%</argument>
