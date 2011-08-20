@@ -1,6 +1,6 @@
 <?php
 
-namespace Beanstalkapp\BeanstalkAPI\DependencyInjection;
+namespace Beanstalkapp\BeanstalkAPIBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
