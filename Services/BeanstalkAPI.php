@@ -2,7 +2,7 @@
 
 namespace Beanstalkapp\BeanstalkAPIBundle\Services;
 
-use Beanstalk\lib\BeanstalkAPI as BeanstalkAPIClass;
+use Beanstalk\BeanstalkAPI as BeanstalkAPIClass;
 
 class BeanstalkAPI extends BeanstalkAPIClass
 {
